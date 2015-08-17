@@ -1,0 +1,25 @@
+{
+    "name": "rowland/ooglee-user",
+    "description": "A Laravel 5 package to add users to a site",
+    "keywords": ["laravel","blog"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Otieno Rowland",
+            "email": "rowlandmtetezi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~4|~5",
+        "rowland/ooglee-platform": "dev-master",
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Rowland\\LaravelBlog\\": "src/",
+            "Ooglee\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
