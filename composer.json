@@ -1,6 +1,6 @@
 {
     "name": "rowland/ooglee-user",
-    "description": "A Laravel 5 package to add users to a site",
+    "description": "A Laravel 5 Ooglee-module to add users to a site",
     "keywords": ["laravel","blog"],
     "license": "MIT",
     "authors": [
