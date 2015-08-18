@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class OogleUserServiceProvider extends ServiceProvider {
+class OogleeUserServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
