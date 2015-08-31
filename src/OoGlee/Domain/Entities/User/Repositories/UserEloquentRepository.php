@@ -2,7 +2,7 @@
 
  use Eloquent;
  use Ooglee\Domain\Entities\User\IUserRepository;
- use Ooglee\Domain\Entities\ABaseEloquentRepository;
+ use Ooglee\Domain\Entities\Eloquent\ABaseEloquentRepository;
 
  class UserEloquentRepository extends ABaseEloquentRepository implements IUserRepository {
 
