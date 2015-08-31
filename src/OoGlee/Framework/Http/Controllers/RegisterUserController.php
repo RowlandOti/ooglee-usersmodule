@@ -1,4 +1,4 @@
-<?php Ooglee\Framework\Http\Controllers
+<?php namespace Ooglee\Framework\Http\Controllers;
 
 class RegisterUserController extends Controller {
 
