@@ -2,9 +2,9 @@
 
  use Eloquent;
  use Ooglee\Domain\Entities\User\IUserRepository;
- use Ooglee\Domain\Entities\Eloquent\ABaseEloquentRepository;
+ use Ooglee\Domain\Entities\Eloquent\AEloquentBaseRepository;
 
- class UserEloquentRepository extends ABaseEloquentRepository implements IUserRepository {
+ class UserEloquentRepository extends AEloquentBaseRepository implements IUserRepository {
 
   	protected $modelClassInstance;
 
