@@ -1,6 +1,7 @@
 <?php namespace Ooglee\Application\Handlers;
 
 use Illuminate\Database\Eloquent\Model;
+use Ooglee\Domain\Events\Dispatcher;
 use Ooglee\Domain\Contracts\IHandler;
 use Ooglee\Domain\Entities\User;
 use Ooglee\Domain\Entities\User\IUserRepositoryInterface;
@@ -16,22 +17,22 @@ class RegisterUserHandler implements IHandler {
 	 */
 
      /**
-     * @var Ooglee\Domain\Entities\Validators\CreateUserValidator
+     * @var CreateUserValidator
      */
     private $validator;
 
     /**
-     * @var Ooglee\Domain\Entities\User\IUserRepositoryInterface
+     * @var IUserRepositoryInterface
      */
     private $repository;
 
     /**
-     * @var Ooglee\Domain\Events\Dispatcher
+     * @var Dispatcher
      */
     private $dispatcher;
 
     /**
-     * @var Oogle\Infrastructure\Hashing\IHashingService
+     * @var IHashingService
      */
     private $hashingService;
 
