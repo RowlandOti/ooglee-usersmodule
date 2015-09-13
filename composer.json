@@ -13,6 +13,7 @@
         "php": ">=5.4.0",
         "illuminate/support": "~5",
         "rowland/ooglee-core": "dev-master"
+
     },
     "autoload": {
         "psr-4": {
