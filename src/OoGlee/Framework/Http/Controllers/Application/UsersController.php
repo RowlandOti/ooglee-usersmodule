@@ -32,7 +32,7 @@ class UsersController extends Controller {
     * @param Event $id
     * @return Response
     */
-    public function show($id)
+    public function getShow($id)
     {
         $response = $this->modelService->getBy($id);
 
