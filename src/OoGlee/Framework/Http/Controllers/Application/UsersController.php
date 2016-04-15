@@ -1,14 +1,14 @@
 <?php namespace Ooglee\Framework\Http\Controllers\Application;
 
 use Ooglee\Framework\Http\Controllers\Controller;
-use Ooglee\Application\Entities\Post\Services\PostService;
+use Ooglee\Application\Entities\User\Services\UserService;
 
 class UsersController extends Controller {
     
-    // Post service
+    // User service
 	private $modelService;
 
-    public function __construct(PostService $modelService)
+    public function __construct(UserService $modelService)
     {
         $this->modelService = $modelService;
     }
