@@ -5,9 +5,9 @@ Route::group(['namespace' => 'Application'], function()
 {
     #USER MODEL 
     // List Resources
-    Route::get(OogleeBConfig::get('config.routes.base_uri')., ['as' => 'user.index', 'uses' => 'UsersController@getIndex']);
+    Route::get(OogleeUConfig::get('config.routes.base_uri')., ['as' => 'user.index', 'uses' => 'UsersController@getIndex']);
     // Show resource 
-    Route::get(OogleeBConfig::get('config.routes.base_uri').'/{id}', ['as' => 'user.view', 'uses' => 'UsersController@getShow']);
+    Route::get(OogleeUConfig::get('config.routes.base_uri').'/{id}', ['as' => 'user.view', 'uses' => 'UsersController@getShow']);
 });
 
 // Admin routes
