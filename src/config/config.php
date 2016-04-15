@@ -76,7 +76,7 @@ return array(
 	/**
 	 * The Post routes to use with our package
 	 */
-	'user_routes' => array(
+	'routes' => array(
     	/**
 		 * Base URI of the package's pages, e.g. "user" in http://domain.com/user and http://domain.com/user/my-user
 		 */
