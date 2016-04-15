@@ -23,7 +23,7 @@ class UsersController extends Controller {
         $response = $this->modelService->getAll();
 
         //return resources listing view
-        return view(\OogleeUConfig::get('config.post_index.index'), compact('response'));
+        return view(\OogleeUConfig::get('config.user_index.index'), compact('response'));
     }
 
      /**
@@ -37,7 +37,7 @@ class UsersController extends Controller {
         $response = $this->modelService->getBy($id);
 
         //return resource listing view
-        return view(\OogleeUConfig::get('config.post_view.view'), compact('response'));
+        return view(\OogleeUConfig::get('config.user_view.view'), compact('response'));
         
     }
 }
