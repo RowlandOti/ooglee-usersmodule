@@ -5,7 +5,7 @@ Route::group(['namespace' => 'Application'], function()
 {
     #USER MODEL 
     // List Resources
-    Route::get(OogleeUConfig::get('config.routes.base_uri')., ['as' => 'user.index', 'uses' => 'UsersController@getIndex']);
+    Route::get(OogleeUConfig::get('config.routes.base_uri'), ['as' => 'user.index', 'uses' => 'UsersController@getIndex']);
     // Show resource 
     Route::get(OogleeUConfig::get('config.routes.base_uri').'/{id}', ['as' => 'user.view', 'uses' => 'UsersController@getShow']);
 });
@@ -17,7 +17,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function()
     {
     	#USER MODEL
         // List Resources
-        Route::get(OogleeUConfig::get('config.routes.base_uri_admin')., ['as' => 'admin.user.index', 'uses' => 'UsersController@getIndex']);
+        Route::get(OogleeUConfig::get('config.routes.base_uri_admin'), ['as' => 'admin.user.index', 'uses' => 'UsersController@getIndex']);
     	// Create Resource GET/POST
         Route::get(OogleeUConfig::get('config.routes.base_uri_admin').'/create', ['as' => 'admin.user.create', 'uses' => 'UsersController@getCreate']);
         Route::post(OogleeUConfig::get('config.routes.base_uri_admin').'/create', ['as' => 'admin.user.create', 'uses' => 'UsersController@postCreate']);
