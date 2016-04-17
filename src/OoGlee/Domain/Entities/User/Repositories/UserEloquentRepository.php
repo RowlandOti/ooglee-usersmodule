@@ -1,14 +1,14 @@
 <?php namespace Ooglee\Domain\Entities\User\Repositories;
 
- use Eloquent;
- use Ooglee\Domain\Entities\User\IUserRepository;
- use Ooglee\Domain\Entities\Eloquent\AEloquentBaseRepository;
+use Ooglee\Domain\Entities\User\Contracts\IUser;
+use Ooglee\Domain\Entities\User\Contracts\IUserRepository;
+use Ooglee\Domain\Entities\User\AUserEloquentRepository;
 
- class UserEloquentRepository extends AEloquentBaseRepository implements IUserRepository {
+ class UserEloquentRepository extends AUserEloquentRepository implements IUserRepository {
 
   	protected $modelClassInstance;
 
- 	public function __construct(Eloquent $model)
+ 	public function __construct(IUser $model)
     {
         $this->modelClassInstance = $model;
 
