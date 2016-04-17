@@ -15,6 +15,10 @@
         "rowland/ooglee-core": "dev-master"
 
     },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "phpunit/phpunit": "~3.7"
+    },
     "autoload": {
         "psr-4": {
             "Ooglee\\": "src/OoGlee"
