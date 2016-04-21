@@ -21,8 +21,8 @@ class UserTableSeeder extends Seeder
         $user->auth_token = "0d961ccd209c91e7e9be393658012115";
         $user->status = "CONFIRMED";
         $user->role = "CLIENT";
-        $user->main_image = "profile.jpg";
-        $user->main_image_alt = "Voluptas sunt qui libero cupiditate sequi";
+        $user->profile_image = "profile.jpg";
+        $user->profile_image_alt = "Voluptas sunt qui libero cupiditate sequi";
         $user->you_tube_video_id = "http://youtube.com/v/c91e7e9";
         $user->biography = "Look me in the eyes, it's okay if your scared but so am I";
         $user->count_views = "50";
@@ -41,8 +41,8 @@ class UserTableSeeder extends Seeder
         $user->auth_token = "0d961ccd209c91e7e9be393658012115";
         $user->status = "CONFIRMED";
         $user->role = "CHEF";
-        $user->main_image = "profile.jpg";
-        $user->main_image_alt = "Voluptas sunt qui libero cupiditate sequi";
+        $user->profile_image = "profile.jpg";
+        $user->profile_image_alt = "Voluptas sunt qui libero cupiditate sequi";
         $user->you_tube_video_id = "http://youtube.com/v/c91e7e9";
         $user->biography = "Forget not, this day";
         $user->count_views = "45";

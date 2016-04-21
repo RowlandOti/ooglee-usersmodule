@@ -6,6 +6,7 @@ use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\Reminders\RemindableInterface;
 use Ooglee\Domain\Events\EventableTrait;
+use Ooglee\Domain\Entities\User\Events\UserWasRegisteredEvent;
 use Ooglee\Domain\Entities\User\Contracts\IUser;
 use Ooglee\Domain\Entities\User\UserBaseModel;
 use Ooglee\Domain\Contracts\IAggregateRoot;
@@ -19,7 +20,7 @@ class User extends UserBaseModel implements IAggregateRoot, IUser {
 	 *
 	 * @var string
 	 */
-	protected $table = 'tb_users';
+	protected $table = 'tb_user';
 
 	/**
      * Save User, ensuring all its Relationships
@@ -32,7 +33,7 @@ class User extends UserBaseModel implements IAggregateRoot, IUser {
     {	
 	    if(! $this->exists)
 	        {
-	            $this->recordEvent(new UserWasRegisteredEvent($this));
+	            $this->recordEvents(new UserWasRegisteredEvent($this));
 	        }
 
 	    $saved = parent::save($options);
