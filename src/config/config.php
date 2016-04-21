@@ -84,6 +84,6 @@ return array(
 		/**
 		 * Base URI of the package's pages, e.g. "user" in http://domain.com/user and http://domain.com/user/my-user
 		 */
-		'base_uri_admin' => 'admin/user'
+		'base_uri_admin' => 'user'
 	),
 );
